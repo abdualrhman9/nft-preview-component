@@ -1,0 +1,88 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+
+    --main-background: hsl(217, 54%, 11%);
+    --card-background: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+main {
+    background-color: var(--main-background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    background-color: var(--card-background);
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.card-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-container .card-content h2 {
+    color: var(--white);
+}
+
+.card-container .card-content .description {
+ color: #cfcfcf;
+ line-height: 1.6;
+}
+
+.d-flex-between {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info p {
+    flex: 1;
+}
+
+.info p:first-child {
+    color: var(--cyan);
+}
+
+.info p:last-child {
+    color: var(--white);
+    text-align: end;
+}
+
+hr {
+    background-color: var(--line);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    color: var(--soft-blue);
+}
+
+.author img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    margin-right: 15px;
+}
+
+.author span {
+    color: var(--white);
+    margin: 5px;
+}
+
